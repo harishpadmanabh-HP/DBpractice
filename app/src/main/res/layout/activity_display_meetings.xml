@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayMeetings">
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:hint="meet title"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextStreet"
+        android:layout_below="@+id/editTextStreet"
+        android:layout_marginTop="22dp"
+        android:hint="meet details"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editTextName"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="date"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/editTextStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_below="@+id/editTextPhone"
+        android:ems="10"
+        android:hint="time"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextStreet"
+        android:layout_below="@+id/editTextName"
+        android:ems="10"
+        android:hint="loc"
+        android:inputType="phone|text" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCity"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:onClick="run"
+        android:text="save" />
+
+</LinearLayout>

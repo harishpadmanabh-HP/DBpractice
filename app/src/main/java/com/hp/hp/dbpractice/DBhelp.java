@@ -67,7 +67,7 @@ public class DBhelp extends SQLiteOpenHelper {
         contentValues.put("date", date);
         contentValues.put("time", time);
         contentValues.put("location", location);
-        db.update("contacts", contentValues, "id = ? ", new String[] { Integer.toString(id) } );
+        db.update("meetings", contentValues, "id =? ", new String[] { Integer.toString(id) } );
         return true;
     }
     public Integer deleteContact (Integer id) {
